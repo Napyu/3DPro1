@@ -22,7 +22,7 @@ int main(void)
     glfwSetErrorCallback(error_callback);
     if (!glfwInit())
         exit(EXIT_FAILURE);
-    window = glfwCreateWindow(640, 480, "Simple example", NULL, NULL);
+    window = glfwCreateWindow(500, 500, "Simple example", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -66,7 +66,7 @@ int main(void)
             //그려주고
             glVertex2f(x, y);
         }
-        // 원이 되게 찌그러져 있는데 반지름이 1이라니 이게 맞겠죠?
+        
         glEnd();
         glFinish();
 
